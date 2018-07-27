@@ -41,31 +41,31 @@ app.listen(port, function() {
 
 // var server = http.createServer(handleRequest);
 
-// function handleRequest(req, res) {
+function handleRequest(req, res) {
 
-//   // Capture the url the request is made to
-//   var path = req.url;
+  // Capture the url the request is made to
+  var path = req.url;
 
-//   // When we visit different urls, call the function with different arguments
-//   switch (path) {
+  // When we visit different urls, call the function with different arguments
+  switch (path) {
 
-//   case "/about":
-//   case "/contact":
-//   case "/portfolio":
-//     return renderHTML(path + ".html", res);
+  case "/about":
+  case "/contact":
+  case "/portfolio":
+    return renderHTML(path + ".html", res);
 
-//   default:
-//     return renderHTML("/index.html", res);
-//   }
-// }
+  default:
+    return renderHTML("/index.html", res);
+  }
+}
 
-// // function to take a filepath and respond with html
-// function renderHTML(filePath, res) {
-//   return fs.readFile(__dirname + filePath, function(err, data) {
-//     res.writeHead(200, { "Content-Type": "text/html" });
-//     res.end(data);
-//   });
-// }
+// function to take a filepath and respond with html
+function renderHTML(filePath, res) {
+  return fs.readFile(__dirname + filePath, function(err, data) {
+    res.writeHead(200, { "Content-Type": "text/html" });
+    res.end(data);
+  });
+}
 
 // // Starts our server.
 // server.listen(PORT, function() {
