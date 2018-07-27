@@ -28,15 +28,7 @@ app.get("/", function(req, res) {
 });
 
 
-  app.get("/about", function(req, res) {
-    res.sendFile(path.join(__dirname, "about.html"));
-  });
-    app.get("/contact", function(req, res) {
-    res.sendFile(path.join(__dirname, "contact.html"));
-  });
-    app.get("/portfolio", function(req, res) {
-    res.sendFile(path.join(__dirname, "portfolio.html"));
-  });
+
 
 // // Starts our server.
 app.listen(port, function() {
