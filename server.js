@@ -3,7 +3,8 @@ var http = require("http");
 var fs = require("fs");
 
 // Set our port to 8080
-var PORT = 8080;
+var serverPORT = 8000;
+var port = process.env.PORT || serverPORT;
 
 var server = http.createServer(handleRequest);
 
