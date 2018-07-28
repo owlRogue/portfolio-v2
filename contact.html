@@ -21,6 +21,20 @@
     font-family: "Josefin Sans";
   }
 
+  .jumbotron {
+    margin-bottom: 0px;
+    padding: 10px;
+    background: black;
+    color: lightgrey;
+  }
+
+  .jumbotron h4 {
+    font-size: 16px;
+    font-weight: 100;
+    padding: 2px;
+    margin: 0px;
+  }
+
   .navbar {
     height: 40px;
     border-radius: 0px;
@@ -30,7 +44,7 @@
     width: auto;
     margin-top: 0px;
     min-width: 600px;
-    font-weight: 200;
+    font-weight: 500;
     font-size: 17px;
     color: aliceblue;
   }
@@ -45,6 +59,14 @@
     background-color: lightgray;
   }
 
+  #return-panel {
+    display: inline-block;
+    overflow: auto;
+    color: lightgray;
+    font-weight: 100;
+    height: auto;
+    margin: 0px;
+  }
 
   button#enter-site {
     border-radius: 50px;
@@ -53,10 +75,40 @@
     margin-top: 30px;
   }
 
-.link {
-  color: purple;
-}
+  .link {
+    color: purple;
+  }
 
+  #submit {
+    background-color: aliceblue;
+    border-radius: 15px;
+    height: 20px;
+    width: 90px;
+    font-size: 12px;
+    padding: 3px;
+    color: black;
+  }
+
+  .form {
+    margin: 30px;
+  }
+
+  input, textarea {
+    width: 200px;
+  }
+
+  label {
+    width: 100px;
+  }
+
+  .iconlinks a {
+      margin-left: 30px;
+      float: right;
+  }
+
+  #return {
+    margin: 30px;
+  }
 
 </style>
 
@@ -80,12 +132,26 @@
   </nav>
 
 
-<body>
-  <h1>Contact</h1>
-  <ol>
-    <li>React</li>
-    <li>Express</li>
-    <li>Materialize</li>
-  </ol>
-</body>
+    <div class="row" id="return-panel">
+
+      <div class="form">
+        <h4>Contact Form</h4>
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name...">
+          <br>
+
+          <label for="email">Email</label>
+          <input type="text" id="email" name="email" placeholder="Your email...">
+          <br>
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="" style="height:200px"></textarea>
+          <br>
+          <input type="submit" id="submit" value="Submit">
+      </div>
+    </div>
+
+
+  </body>
+
 </html>

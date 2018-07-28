@@ -21,6 +21,20 @@
     font-family: "Josefin Sans";
   }
 
+  .jumbotron {
+    margin-bottom: 0px;
+    padding: 10px;
+    background: black;
+    color: lightgrey;
+  }
+
+  .jumbotron h4 {
+    font-size: 16px;
+    font-weight: 100;
+    padding: 2px;
+    margin: 0px;
+  }
+
   .navbar {
     height: 40px;
     border-radius: 0px;
@@ -30,7 +44,7 @@
     width: auto;
     margin-top: 0px;
     min-width: 600px;
-    font-weight: 200;
+    font-weight: 500;
     font-size: 17px;
     color: aliceblue;
   }
@@ -45,6 +59,14 @@
     background-color: lightgray;
   }
 
+  #return-panel {
+    display: inline-block;
+    overflow: auto;
+    color: lightgray;
+    font-weight: 100;
+    height: auto;
+    margin: 0px;
+  }
 
   button#enter-site {
     border-radius: 50px;
@@ -53,10 +75,40 @@
     margin-top: 30px;
   }
 
-.link {
-  color: purple;
-}
+  .link {
+    color: purple;
+  }
 
+  #submit {
+    background-color: aliceblue;
+    border-radius: 15px;
+    height: 20px;
+    width: 90px;
+    font-size: 12px;
+    padding: 3px;
+    color: black;
+  }
+
+  .form {
+    margin: 30px;
+  }
+
+  input, textarea {
+    width: 200px;
+  }
+
+  label {
+    width: 100px;
+  }
+
+  .iconlinks a {
+      margin-left: 30px;
+      float: right;
+  }
+
+  #return {
+    margin: 30px;
+  }
 
 </style>
 
@@ -79,13 +131,25 @@
     </button>
   </nav>
 
+  <!-- <div class="jumbotron"> -->
 
-<body>
-  <h1>Some of my work</h1>
-  <ol>
-    <li>Soylent</li>
-    <li>Pizza</li>
-    <li>Shrimp tempura </li>
-  </ol>
+<div id="return">
+
+  <div class="iconlinks">
+      <a href="https://www.github.com" target="_blank">
+        <img src="assets/images/gitHub.png" width="50" height="50">
+      </a>
+
+      <a href="https://www.linkedin.com/in/koltynpalmer" target="_blank">
+        <img src="assets/images/icon.linkedin.thinblackborder.png" width="50" height="50">
+      </a>
+
+      <a href="https://www.stackoverflow.com" target="_blank">
+        <img src="assets/images/stackOverflowCircleBound.png" width="50" height="50">
+      </a>
+
+    </div>
+  </div>
+
 </body>
 </html>
