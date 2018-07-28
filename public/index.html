@@ -64,8 +64,9 @@
     overflow: auto;
     color: lightgray;
     font-weight: 100;
-    height: auto;
+    height: 50%;
     margin: 0px;
+    width: 100%;
   }
 
   button#enter-site {
@@ -73,6 +74,10 @@
     margin: auto;
     width: auto;
     margin-top: 30px;
+  }
+
+  .row#return-panel {
+    height: 50%;
   }
 
   .link {
@@ -93,7 +98,8 @@
     margin: 30px;
   }
 
-  input, textarea {
+  input,
+  textarea {
     width: 200px;
   }
 
@@ -102,14 +108,26 @@
   }
 
   .iconlinks a {
-      margin-left: 30px;
-      float: right;
+    margin-left: 30px;
+    float: right;
   }
 
   #return {
     margin: 30px;
   }
 
+  button#enter-site {
+    width: 90%;
+    height: 90%;
+    margin: 30px;
+    padding: 3px;
+    float: center;
+  }
+
+  #return-panel h4 {
+    color: black;
+    margin: 5px;
+  }
 </style>
 
 <body>
@@ -132,16 +150,15 @@
   </nav>
 
 
-
-  <div class="row" id="return-panel">
-    <div class="container">
-      <button class="button enter-site" id="enter-site">
-        <a href="/portfolio">
-          <h4>Get to know Kolt!</h4>
-        </a>
-      </button>
+    <div class="row" id="return-panel">
+      <!-- <div class="container"> -->
+        <button class="button enter-site" id="enter-site">
+          <a href="/about">
+            <h4>Enter</h4>
+          </a>
+        </button>
+      <!-- </div> -->
     </div>
-  </div>
 
 </body>
 
